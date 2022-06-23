@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    font-family: monospace;
+    margin:  0px 10px;
+    background-color: #141b43;
+
+}
+
+/* header */
+
+.player-header{
+
+    padding-bottom: .1rem;
+    padding-top: .5rem;
+    margin-top: -.8rem;
+    background-color: #141b43;
+    width: 100%;
+    /* border: 2px solid white; */
+    height: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: none;
+    position: fixed;
+    /* z-index: 10; */
+    
+   
+    
+   
+
+
+}
+
+
+.player-logo{
+    
+    padding-left: 2%;
+    height: 35px;
+    margin-top: .6rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.player-logo img{
+
+width: 35px;
+border-radius: 50%;
+
+
+}
+
+.player-name{
+    display: inline-block;
+    padding-left: 2px;
+    font-size: 11px;
+    
+
+}
+
+
+
+.player-header nav{
+    color: lightcyan;
+    margin-top: .3rem;
+
+
+}
+
+.player-header ul{
+    list-style: none;
+    font-size: 12px;
+
+}
+
+
+
+.search-box{
+
+
+    
+    width: 14%;
+    margin-left: 40%;
+    margin-top: .9rem;
+    position: relative;
+    
+  
+}
+.search-box button{
+    margin-top: .21rem;
+    padding-right: 45px ;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    
+    
+    
+   
+}
+.search-box i{
+
+    color: white;
+    
+}
+
+.search-bar{
+    background-color: #19245a;
+    border-radius: 5px;
+    border: none;
+    height: 20px;
+    width: 90%;
+    padding-left: 25px;
+    color: white;
+    font-size: 10px;
+    
+}
+
+/* ::-webkit-input-placeholder {
+    font-size: 9px;
+  }
+  ::placeholder {
+    font-size: 9px;
+  } */
+
+.search-mic{
+    position: absolute;
+    margin-left: 93%;
+}
+
+
+.notification-bell{
+    color: white;
+    margin-top: 1.1rem;
+    margin-left: 1%;
+    /* position: relative; */
+}
+
+.login-avatar{
+   
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-top: .37rem;
+    margin-right: 3%;
+    border-radius: 50%;
+    justify-content: right;
+}
+.login-avatar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+
+/* full container */
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    
+    
+
+}
+
+
+main{
+    width: 60%;
+    /* height: 40vh; */
+   
+    background-color: aqua;
+}
+
+.about-artist-box{
+    
+
+width: 100%;
+height: 40vh;
+background-color: black;
+
+}

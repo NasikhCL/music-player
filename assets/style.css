@@ -1,0 +1,991 @@
+/* body  */
+
+body{
+    margin: 0;
+    font-family: monospace;
+    height: 100vh;
+    background-image: url(pexels-evie-shaffer-4004376.jpg);
+    background-size: contain;
+    
+
+}
+
+
+/* header */
+
+.player-header{
+    padding-top: .5rem;
+    background-color: #141b43;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: none;
+    position: fixed;
+    z-index: 10;
+    padding-bottom: .3rem;
+    
+   
+
+
+}
+
+/* logo image  */
+
+.player-logo{
+    
+    padding-left: 2%;
+    height: 35px;
+    margin-top: .6rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.player-logo img{
+
+width: 35px;
+border-radius: 50%;
+
+
+}
+
+/* music player name */
+
+.player-name{
+    display: inline-block;
+    padding-left: 2px;
+    font-size: 11px;
+
+
+}
+
+
+/* navigation  */
+
+
+.player-header nav{
+    color: lightcyan;
+    margin-top: .3rem;
+    opacity: .5;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+
+
+}
+.player-header nav:hover{
+    opacity: 1;
+    color: white;
+}
+
+.player-header ul{
+    list-style: none;
+    font-size: 12px;
+
+}
+
+
+
+/* search bar box */
+
+
+.search-box{
+
+
+    
+    width: 14%;
+    margin-left: 40%;
+    margin-top: .9rem;
+    position: relative;
+    
+  
+}
+.search-box button{
+    margin-top: .21rem;
+    padding-right: 45px ;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    
+
+}
+
+
+.search-box i{
+
+    color: white;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    
+}
+.search-box i:hover{
+
+    transform: scale(1.1);
+
+
+}
+
+/* search bar */
+
+.search-bar{
+    background-color: #19245a;
+    border-radius: 5px;
+    border: none;
+    height: 20px;
+    width: 90%;
+    padding-left: 25px;
+    color: white;
+    font-size: 10px;
+    
+}
+
+
+.search-mic{
+    position: absolute;
+    margin-left: 93%;
+}
+
+/* notification icon */
+
+.notification-bell{
+    color: white;
+    margin-top: 1.1rem;
+    margin-left: 1%;
+}
+
+/* user avatar */
+
+.login-avatar{
+   
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-top: .37rem;
+    margin-right: 3%;
+    border-radius: 50%;
+    justify-content: right;
+}
+.login-avatar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+/* player main content section*/
+
+.player-body{
+    
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.player-main{
+    width: 70%;
+    height: 100vh;
+    overflow-y: scroll;
+
+
+}
+
+/* to hide the scroll bar */
+.player-main::-webkit-scrollbar{
+    display: none;
+}
+
+/* music player carousel */
+
+.carousel{
+    margin-top: 70px;
+    width: 95%;
+    height: 15rem;
+    display: flex;
+    flex-wrap: none;
+    justify-content: center; 
+    align-items: center;
+}
+
+/* carusel image box  */
+
+.carousel-image{
+width: 190px;
+height: 190px;
+margin-left: 05%;
+transition: all .5s ease-in-out;
+
+}
+
+
+.carousel-image img{
+    width: 100%;
+    height: 100%;
+}
+.carousel-image:hover{
+    transform: scale(1.2);
+    box-shadow: 2px 4px 2px 2px grey;
+}
+
+
+
+/* latest release section*/
+
+.latest-release-song-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+
+}
+
+/* latest release songs */
+
+.latest-release-song{
+
+    width: 45%;
+    height: 70px;
+    background-color: #c0c4dd;
+    margin-bottom: 15px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+   
+}
+
+/* latest release song box on hover */
+
+.latest-release-song:hover{
+    transform: scale(1.1);
+    background-color: transparent;
+    border: 2px solid white;
+   
+}
+
+/* latest release songs image box */
+.latest-release-image{
+    width: 65px;
+    height: 65px;
+    margin: 2.5px;
+    display: inline-block;
+    
+    
+
+}
+.latest-release-image img{
+    width: 100%;
+}
+
+/* box text to make in same line */
+.box-text{
+    display: inline-block;
+
+}
+
+
+
+/* popular artist section  */
+
+
+.popular-artist-section{
+
+    margin-left: 8%;
+    margin-bottom: 3.5rem;
+
+}
+
+/* to make popular artist box in same line */
+
+.popular-artist{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* popular artist image */
+
+.artist-image{
+    width: 5.5rem;
+    height: 5.5rem;
+   
+}
+.artist-image img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* popular artist names */
+
+.artist-image h4{
+    text-align: center;
+    font-size: 11px;
+    font-weight: 400;
+
+}
+
+/* stations section */
+
+.player-stations-section{
+    width: 90%;
+    height: 110px;
+    background-color: rgb(40, 36, 77);
+    margin-left: 8%;
+    margin-bottom: 1.3rem;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  
+
+}
+/* stations skewed and rotated card */
+
+.stations{
+    background-color: rgb(75, 84, 107);
+    width: 45px;
+    height: 65px;
+    margin-left: 4%;
+    transform: rotate(20deg);
+    transform: skew(-20deg ,10deg);
+    padding: 5px 10px ;
+    box-shadow: 
+    rgb(255, 166, 0, .5) 5px 3px,
+    rgba(0, 255, 42, 0.5) 3px 2px,
+    rgba(123, 0, 255, 0.5) 1px 1px;
+    
+    
+
+
+    
+}
+.stations-card{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(music\ player\ logo.jpeg);
+    background-size: cover;
+    
+    
+}
+
+/* stations image container */
+
+.stations-image-box{
+    margin-top: -5.5rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+    justify-content: space-around;
+}
+
+.stations-image{
+
+    width: 3.5rem;
+    height:3.5rem;
+   
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+    
+    
+   
+
+}
+
+.stations-image img{
+    width: 100%;
+    border-radius: 50%;
+    opacity: 100%;
+    
+}
+
+/* stations card text*/
+
+.stations-image-text{
+    text-align: center;
+    margin-top: -2.7rem;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+
+    
+}
+
+
+
+/* different vibe (road trip, party etc) section */
+
+.playlist-vibe{
+
+    width: 90%;
+    margin-left: 8%;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+}
+
+.vibe{
+    width: 30%;
+    height: 120px;
+    background-color: #19245a;
+}
+.vibe img{
+
+    height: 100%;
+    width: 100%;
+}
+.vibe-text{
+    text-align: center;
+    margin-top: -4rem;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+
+/* latest language wise song section */
+
+.latest-language-section{
+    width: 90%;
+    height: 150px;
+    margin-left: 8%;
+    margin-bottom: 3rem;
+   
+}
+
+.lastest-language-song-box{
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+
+.lastest-language-song{
+ 
+    width: 95px;
+    height: 120px;
+    margin-right: 5px;
+    margin-bottom: 2rem;
+    
+    
+}
+/* latest language wise song container */
+
+.lastest-language-song img{
+    width: 100%;
+}
+.latest-language-song-details{
+    font-size: 14px;
+    margin-top: -1.6px;
+    
+}
+
+
+
+
+
+
+
+/* aside/Player queue section */
+
+/* queue title */
+.queue-title{
+ 
+    font-size: 20px;
+    margin-top: -2rem;
+    /* margin: 55px 0px; */
+    position: fixed;
+    /* background-color: #141b43; */
+    width: 100%;
+    height: 30px;
+}
+
+/* drop down list for the queue section */
+
+/* drop down button */
+.drop-down-btn{
+  
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    margin-left: 10%;
+}
+/* dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* to make the dropdown content visibleon hover */
+
+  .dropdown-content a {
+    color: black;
+    padding: 7px 10px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.drop-down-btn:hover{
+    display: block;
+
+}
+.dropdown:hover .drop-down-btn {
+    background-color: #7f7f7f;
+  }
+
+
+  /* queue songs */
+.player-queue-section{
+    height: 60vh;
+    width: 25%;
+    margin-top: 7rem;
+    position: fixed;
+    overflow-y: scroll;
+    margin-left: 70%;
+    
+}
+/* to hide the scroll bar of the aside/queue section */
+.player-queue-section::-webkit-scrollbar{
+    display: none;
+}
+
+
+.player-queue{
+    width: 100%;
+    height: 100vh;  
+
+}
+
+/* each song container in the aside section */
+.queue-box{
+
+    width: 75%;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 10%;
+    
+}
+
+/* queue songs image container */
+.queue-song-image{
+    width: 40px;
+    height: 40px;
+    
+}
+.queue-song-image img{
+    width: 100%;
+}
+
+/* queue song's details  */
+.queue-song-details{
+    margin-left: 50px;
+    margin-top: -45px;
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.favourite-heart{
+    margin-left: 40%;
+}
+
+
+
+/* date text of latest language song  */
+
+.text-date{
+    font-size: 10px;
+    font-weight: 100;
+    color: #dfdfdf;
+}
+
+
+/* second page which is containing the about artist and artists songs  */
+
+/* about artist page main container giving padding from the top since
+ the header section is set as fixed, so in order to avoid the content 
+ to go under the header giving padding*/
+
+.container{
+  
+    padding-top: 120px;
+
+}
+
+
+.artists-page-main{
+    margin-left: 5%;
+    height: 70vh;
+    position: fixed;
+    overflow-y: scroll;
+    
+    
+}
+
+/* to hide the scroll bar of the section */
+.artists-page-main::-webkit-scrollbar{
+   
+        display: none;
+
+}
+    
+
+
+
+
+
+
+/* artist card containing about artist */
+
+.about-artist-card{
+
+    width: 60%;
+    height: 17rem;
+    background: linear-gradient(to top right, lightpink 0%,lightblue 100%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+   }
+   
+   /* artists image */
+
+   .card-image{
+       width: 30%;
+       height: 17rem;
+       
+   }
+   .card-image img{
+       width: 100%;
+       height: 100%;
+
+   }
+   /* artists card's contect aligning */
+   .card-details{
+    width: 60%;
+    height: 17rem;
+    display: inline-block;
+    margin-left: 5%;
+
+   }
+   .followers-count{
+       display: inline-block;
+       font-size: 15px;
+       margin-left: 45%;
+       font-weight: 400;
+   }
+
+   .artist-place{
+       margin-top: -1.3rem;
+   }
+   .play-all-btn{
+       border: 2px solid white;
+       background-color: transparent;
+       font-size: larger;
+       font-weight: bold;
+       color: rgb(30, 187, 51);
+   }
+
+   .play-all-btn:hover{
+
+    background-color: white;
+    box-shadow: 2px 2px lightgray;
+    
+    
+    }
+
+   .follow-btn{
+       margin-left: 50%;
+       border: none;
+       font-weight: bold;
+       font-size: 15px;
+       background-color: transparent;
+       color: #1b4051;
+   }
+
+   /* artists song list */
+ 
+
+   .artist-song-list{
+        width: 60%;
+        margin-top: 10px;
+        height: 90vh;
+    
+   }
+   
+  
+   /* artists song each container */
+
+.song-box{
+
+    width: 98%;
+    min-width: 300px;
+    height: 70px;
+    background-color: #307390;
+    margin-top: 25px;
+    transition: all .3s ease-in-out;
+   
+    
+}
+.song-box:hover{
+    transform: scale(1.05);
+    background-color: transparent;
+    border: 2px solid white;
+    
+}
+
+
+.artist-song-image{
+    width: 70px;
+    height: 70px;
+ 
+    
+}
+.artist-song-image img{
+    width: 100%;
+}
+.artist-song-details{
+    margin-left: 100px;
+    margin-top: -75px;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 10px;
+}
+
+.artist-favourite-heart{
+    margin-left: 90%;
+    
+}
+
+
+/* aside section of the artists page */
+
+.artist-page-aside{
+    position: fixed;
+    margin-left: 70%;
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+/* hide the scrollbar */
+.artist-page-aside::-webkit-scrollbar{
+    display: none;
+}
+
+/* similar artist section */
+
+.similar-artists{
+    width: 24rem;
+    margin-top: -1rem;
+
+}
+
+
+.similar-box{
+    width: 70%;
+    height: 50px;
+    margin-top: 25px;
+
+}
+
+.similar-song-image{
+    width: 40px;
+    height: 40px;
+
+
+}
+
+.similar-song-image img{
+    width: 100%;
+}
+.similar-song-details{
+    margin-left: 70px;
+    margin-top: -50px;
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.similar-artist-favourite-heart{
+    margin-left: 75%;
+    
+}
+
+/* recently played section */
+
+.recently-played{
+    width: 24rem;
+}
+
+
+
+
+
+
+
+
+/* music player footer containing the music player controller and current playing song  */
+
+.music-player{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    background-color: #141b43;
+    display: flex;
+
+}
+
+/* to hide the scrollbar of the whole page */
+.music-player::-webkit-scrollbar{
+    display: block;
+}
+
+/* current playing song */
+.current-song-box{
+
+    width: 20%;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 10px;
+    
+    
+}
+.current-song-image{
+    width: 40px;
+    height: 40px;
+}
+
+.current-song-image img{
+    width: 100%;
+    height: 100%;
+}
+.current-song-details{
+    margin-left: 30%;
+    margin-top: -45px;
+    font-size: 10px;
+    font-weight: 900;
+}
+
+/* music player controller like play,pause,next etc */
+.music-bar{
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #458398;
+    margin-left: 10%;
+    
+}
+.fa-circle-pause{
+    font-size: 35px;
+}
+
+.bar-time{
+    margin-top: 4px;
+    width: 500px;
+    height: 4px;
+    background-color: #85868b;
+    display: flex;
+    align-items: center;
+}
+
+.time-line{
+
+    background-color: greenyellow;
+    width: 25%;
+    height: 4px;
+}
+.timeline-controller{
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    
+
+}
+
+/* music player volume controller */
+
+.audio-bar{
+    
+        width: 10%;
+        display: flex;
+        margin-top: 40px;
+        font-size: 15px;
+        color: #458398;
+        margin-left: 10%;
+        
+  
+}
+.volume{
+    margin-right: 10px;
+    margin-top: -2px;
+}
+
+
+
+
+
+
+
+
+/* margine left 8 percentage */
+
+.ml-8{
+
+    margin-left: 8%;
+    
+}
+
+/* margine left 4rem */
+
+.ml-4{
+    margin-left: -.4rem;
+}
+
+
+/* text colors */
+
+.text-white{
+    color: white;
+}
+
+.text-grey{
+    color: #85868b;
+}
+
+
+
+/* make text center */
+
+
+.text-center{
+    text-align: justify;
+}
+
